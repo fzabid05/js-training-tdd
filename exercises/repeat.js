@@ -9,6 +9,14 @@
 
 // Your code:
 
+const repeat = (strPr , numPr) => {
+    let complete ="";
+    for (let i= 0; i < numPr; i++){
+        complete += strPr;
+    }
+    return complete;
+} ;
+
 //* Begin of tests
 const assert = require('assert');
 
