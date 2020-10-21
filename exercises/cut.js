@@ -12,8 +12,16 @@
 
 // Your code:
 
+const cutFirst = (str) => str.slice(2) ;
+
+const cutLast = (str) => str.slice(0, str.length-2) ;
+
+const cutFirstLast = (str) => str.slice(2, str.length-2) ;
+
 //* Begin of tests
 const assert = require('assert');
-
-assert.fail('You must write your own tests');
+assert.deepStrictEqual(cutFirst('perseverance'), 'rseverance');
+assert.deepStrictEqual(cutLast('perseverance'), 'perseveran');
+assert.deepStrictEqual(cutFirstLast('perseverance'), 'rseveran');
+// assert.fail('You must write your own tests');
 // End of tests */

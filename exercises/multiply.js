@@ -10,6 +10,23 @@
 
 // Your code:
 
+const multiply = (a, b) => {
+    if(a == 0 || b == 0){
+        return 0
+    }
+    for(let i=1; i < b; i++){
+
+        if((a < 0 && b < 0) || (a > 0 && b > 0)){
+
+            a += a;
+            return a;
+
+        }else {
+        
+            return -a;
+        }   
+    
+}
 //* Begin of tests
 const assert = require('assert');
 

@@ -8,8 +8,12 @@
 
 // Your code:
 
+const yell = (str) => str.toUpperCase();
+
 //* Begin of tests
 const assert = require('assert');
-
-assert.fail('You must write your own tests');
+assert.strictEqual(yell('lolo'), 'LOLO')
+assert.strictEqual(yell('good'), 'GOOD')
+assert.strictEqual(yell('happy'), 'HAPPY')
+// assert.fail('You must write your own tests');
 // End of tests */
