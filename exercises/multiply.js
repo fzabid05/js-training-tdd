@@ -10,22 +10,26 @@
 
 // Your code:
 
-const multiply = (a, b) => {
-    if(a == 0 || b == 0){
-        return 0
-    }
-    for(let i=1; i < b; i++){
+const multiply = (nb, nb1) => {
+    if(!isNaN(nb) && !isNaN(nb1)){
+        let answer = nb
+        for(let i=0; i<nb1-1; i++ ){
+            answer += nb
+        }
 
-        if((a < 0 && b < 0) || (a > 0 && b > 0)){
 
-            a += a;
-            return a;
+        if((nb > 0 && nb1 > 0) || (nb<0 && nb1<0)){
+            return answer;
+        } else if(nb== 0 || nb1 == 0){
+            return 0; 
+        } else if(nb < 0 || nb1 < 0){
+            for(let i=0; i<nb1-1; i-- ){
+                answer += nb
+            }
+            return -(answer)
+        }
 
-        }else {
-        
-            return -a;
-        }   
-    
+    } 
 }
 //* Begin of tests
 const assert = require('assert');

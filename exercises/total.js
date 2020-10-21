@@ -8,6 +8,14 @@
 
 // Your code:
 
+const total = arr => {
+    let count = 0;
+    for(let i=0; i<arr.length; i++){
+        count += arr[i];
+    }
+    return count;
+};
+
 //* Begin of tests
 const assert = require('assert');
 
